@@ -1,0 +1,19 @@
+springdoc.api-docs.path: /pathology-sorting-openapi
+
+server.port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bootdb
+    username: gizaoui
+    password: gizaoui
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update # none update
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  banner-mode: off

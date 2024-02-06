@@ -1,0 +1,16 @@
+springdoc.api-docs.path: /pathology-sorting-openapi
+
+server.port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:h2:mem:dbname
+  jpa: 
+    show-sql: true
+    hibernate.ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  banner-mode: off
